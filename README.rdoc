@@ -1,28 +1,25 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The app has two modes:
 
-Things you may want to cover:
+Admin:
+  * admin landing page showing current tests
+  * creates a test 
+     * insert correct passage
+     * insert incorrect test passage
+     * approves diff highlighting all mistakes by color
+  * Review candidate test submitions
+    * see list of of candidates who submited test
+    * choose a candidate -- see all tests candidate submitted
+    * see candidate submition with all her changes color coded as to correctness
 
-* Ruby version
+Candidate:
+  * register(just give email address)
+  * login and see a candidate landing page
+  * see all tests taken and pending
+  * choose new test
+  * Show her the test passage
+  * Make corrections and submit test 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+ruby 2.0.0p247 (2013-06-27 revision 41674) [universal.x86_64-darwin13]
+Rails 4.0.2
