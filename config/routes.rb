@@ -1,4 +1,5 @@
 Copyeditortest::Application.routes.draw do
+  resources :passages
 
   get "home/index"
   get "home/about"
