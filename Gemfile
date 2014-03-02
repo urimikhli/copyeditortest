@@ -46,5 +46,6 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'haml'
 end
 
