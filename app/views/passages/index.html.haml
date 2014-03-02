@@ -1,0 +1,28 @@
+%h1 Listing passages
+%table
+  %thead
+    %tr
+      %th Title
+      %th Body
+      %th Test body
+      %th User
+      %th File name
+      %th 
+      %th 
+      %th 
+  %tbody
+    -  @passages.each do |passage|
+      %tr
+        %th =  passage.title 
+        %th =  passage.body 
+        %th =  passage.test_body 
+        %th =  passage.user_id 
+        %th =  passage.file_name 
+        %th =  link_to 'Show', passage 
+        %th =  link_to 'Edit', edit_passage_path(passage) 
+        %th =  link_to 'Destroy', passage, method: :delete, data: { confirm: 'Are you sure?' } 
+
+%br
+
+= link_to 'New Passage', new_passage_path 
+%br
