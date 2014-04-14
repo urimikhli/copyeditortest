@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @copyeditor_test.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @copyeditor_test.lastname %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @copyeditor_test.user_id %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @copyeditor_test.email %>
+</p>
+
+<p>
+  <strong>Passage:</strong>
+  <%= @copyeditor_test.passage_id %>
+</p>
+
+<p>
+  <strong>Attempt:</strong>
+  <%= @copyeditor_test.attempt %>
+</p>
+
+<%= link_to 'Edit', edit_copyeditor_test_path(@copyeditor_test) %> |
+<%= link_to 'Back', copyeditor_tests_path %>

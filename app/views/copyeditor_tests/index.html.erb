@@ -1,0 +1,37 @@
+<h1>Listing copyeditor_tests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>User</th>
+      <th>Email</th>
+      <th>Passage</th>
+      <th>Attempt</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @copyeditor_tests.each do |copyeditor_test| %>
+      <tr>
+        <td><%= copyeditor_test.firstname %></td>
+        <td><%= copyeditor_test.lastname %></td>
+        <td><%= copyeditor_test.user_id %></td>
+        <td><%= copyeditor_test.email %></td>
+        <td><%= copyeditor_test.passage_id %></td>
+        <td><%= copyeditor_test.attempt %></td>
+        <td><%= link_to 'Show', copyeditor_test %></td>
+        <td><%= link_to 'Edit', edit_copyeditor_test_path(copyeditor_test) %></td>
+        <td><%= link_to 'Destroy', copyeditor_test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Copyeditor test', new_copyeditor_test_path %>

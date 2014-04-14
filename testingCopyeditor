@@ -1,0 +1,21 @@
+Comparison Test 
+=====
+
+user_id
+firstname
+lastname
+email
+passage_id
+test_body
+attempt
+
+
+how to compare
+=====
+
+attempt Vs body
+==
+regex 
+diff
+
+how many mistakes??

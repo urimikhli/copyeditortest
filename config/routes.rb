@@ -1,4 +1,6 @@
 Copyeditortest::Application.routes.draw do
+  resources :copyeditor_tests
+
   resources :passages
 
   get "home/index"
